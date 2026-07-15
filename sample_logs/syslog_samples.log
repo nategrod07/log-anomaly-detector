@@ -1,0 +1,5 @@
+<34>Oct 11 22:14:15 mymachine su: 'su root' failed for lonvick on /dev/pts/8
+<13>Jul 15 08:41:02 web01 sshd[9421]: Accepted publickey for deploy from 10.0.4.12 port 51422 ssh2
+<165>1 2003-10-11T22:14:15.003Z mymachine.example.com evntslog - ID47 [exampleSDID@32473 iut="3" eventSource="Application" eventID="1011"] An application event log entry
+<14>1 2026-07-15T09:12:33.512Z api-gw-3 gateway 4821 REQ001 - rate limit exceeded for client_id=8827
+this is not a valid syslog line at all
