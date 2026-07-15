@@ -1,5 +1,23 @@
-<34>Oct 11 22:14:15 mymachine su: 'su root' failed for lonvick on /dev/pts/8
-<13>Jul 15 08:41:02 web01 sshd[9421]: Accepted publickey for deploy from 10.0.4.12 port 51422 ssh2
-<165>1 2003-10-11T22:14:15.003Z mymachine.example.com evntslog - ID47 [exampleSDID@32473 iut="3" eventSource="Application" eventID="1011"] An application event log entry
-<14>1 2026-07-15T09:12:33.512Z api-gw-3 gateway 4821 REQ001 - rate limit exceeded for client_id=8827
-this is not a valid syslog line at all
+<78>Jul 14 03:12:41 db-primary cron[512]: (root) CMD (/usr/local/bin/backup.sh)
+<38>Jul 14 06:00:02 web01 sshd[1042]: Accepted publickey for deploy from 10.0.4.12 port 51422 ssh2
+<36>Jul 14 09:15:07 web02 sshd[2210]: Failed password for invalid user admin from 203.0.113.44 port 40551 ssh2
+<36>Jul 14 09:15:09 web02 sshd[2211]: Failed password for invalid user admin from 203.0.113.44 port 40552 ssh2
+<36>Jul 14 09:15:11 web02 sshd[2212]: Failed password for invalid user admin from 203.0.113.44 port 40553 ssh2
+<36>Jul 14 09:15:13 web02 sshd[2213]: Failed password for root from 203.0.113.44 port 40554 ssh2
+<36>Jul 14 09:15:15 web02 sshd[2214]: Failed password for root from 203.0.113.44 port 40555 ssh2
+<4>Jul 14 10:02:00 fw-edge1 kernel: DROP IN=eth0 OUT= SRC=198.51.100.23 DST=10.0.0.1 PROTO=TCP SPT=443 DPT=22
+<34>Jul 14 11:41:55 mymachine su: 'su root' failed for lonvick on /dev/pts/8
+<102>Jul 14 12:00:00 ntp-srv ntpd[203]: synchronized to 10.0.0.53, stratum 2
+<22>Jul 14 13:30:44 mail01 postfix/smtpd[3391]: delivered message to relay
+<27>Jul 14 15:22:03 db-primary mysqld[220]: [ERROR] Table './appdb/sessions' is marked as crashed
+<130>Jul 14 16:44:10 api-gw-3 gateway[4821]: upstream connect error or disconnect/reset before headers
+<15>Jul 14 17:00:00 web01 healthcheck: ok
+<156>Jul 14 17:05:12 web01 app[884]: cache miss ratio exceeded threshold: 0.42
+<29>Jul 14 17:30:00 db-primary backup[999]: completed full backup of appdb (12.4 GB) to s3://backups/appdb/2026-07-14/full.tar.gz in 812s, transferred 12889233408 bytes at avg 15.4MB/s, 0 errors, 0 retries, verification checksum matched
+<142>1 2026-07-14T18:02:11.203Z api-gw-3 gateway 5510 REQ118 - GET /v2/orders 200 41ms
+<37>1 2026-07-14T18:05:44.001Z web02 sshd 2288 - [origin@32473 ip="203.0.113.44"] session opened for user deploy
+<165>1 2003-10-11T22:14:15.003Z mymachine.example.com evntslog - ID47 [exampleSDID@32473 iut="3" eventSource="Application" eventID="1011"][examplePriority@32473 class="high"] An application event log entry
+<22>1 2026-07-14T18:10:09.500Z mail01 postfix 3402 - - delivery failed: mailbox full — no se pudo entregar el mensaje 📬
+<82>1 2026-07-14T18:12:00.000Z web02 sshd 2299 AUTH01 [origin@32473 ip="203.0.113.44"] repeated authentication failure threshold reached for user root
+not a syslog message at all, just noise
+<12Jul 14 20:00:00 web01 sshd[1]: malformed priority field
